@@ -3,10 +3,10 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux'; //give certain components ability to call action creater
 import * as actions from '../actions';
 
-import { Header } from './Header';
+import Header from './Header';
+import Landing from './Landing';
 const Dashboard = () => <h2>Dashboar</h2>;
 const SurveryNew = () => <h2>SurveryNew</h2>;
-const Landing = () => <h2>Landing</h2>;
 
 class App extends Component {
   //time difference between componentWillMount and componentDidMount is almost 0
