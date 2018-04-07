@@ -5,8 +5,8 @@ import * as actions from '../actions';
 
 import Header from './Header';
 import Landing from './Landing';
-const Dashboard = () => <h2>Dashboar</h2>;
-const SurveryNew = () => <h2>SurveryNew</h2>;
+import Dashboard from './Dashboard';
+import SurveyNew from './surveys/SurveyNew';
 
 class App extends Component {
   //time difference between componentWillMount and componentDidMount is almost 0
@@ -22,7 +22,7 @@ class App extends Component {
             <Header />
             <Route exact path='/' component={Landing} />
             <Route exact={true} path='/surveys' component={Dashboard} />
-            <Route exact path='/surveys/new' component={SurveryNew} />
+            <Route exact path='/surveys/new' component={SurveyNew} />
           </div>
         </BrowserRouter>
       </div>

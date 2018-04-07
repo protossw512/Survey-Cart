@@ -3,10 +3,12 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const bodyParser = require('body-parser');
 const cookieSession = require('cookie-session');
-require('./models/User.js');
+require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 const authRoutes = require('./routes/authRoutes');
-const billingRouts = require('./routes/billingRoutes');
+const billingRoutes = require('./routes/billingRoutes');
+const surveyRoutes = require('./routes/surveyRoutes');
 const app = express();
 const PORT = process.env.PORT || 5000;
 const keys = require('./config/keys');
@@ -25,7 +27,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 authRoutes(app);
-billingRouts(app);
+billingRoutes(app);
+surveyRoutes(app);
 
 if (process.env.NODE_ENV === 'production') {
   // express will serve up production assets
