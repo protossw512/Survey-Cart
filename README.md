@@ -7,10 +7,10 @@ Frontend framework: React, Redux
 Backend framework: Express
 Database system: Mongoose
 Services used:
-..* Deployment: Heroku
-..* Payment service: Stripe
-..* Database service: Mlab
-..* Email service: SendGrid
+* Deployment: Heroku
+* Payment service: Stripe
+* Database service: Mlab
+* Email service: SendGrid
 
 ### Deploy Sample
 [link] (https://vast-plateau-43594.herokuapp.com/)
