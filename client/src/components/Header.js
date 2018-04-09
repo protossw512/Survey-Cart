@@ -26,11 +26,11 @@ class Header extends Component {
     return (
 
       <nav>
-        <div className='nav-wrapper'>
+        <div className='nav-wrapper teal darken-2'>
           <Link
             to={ this.props.auth ? '/surveys' : '/'}
             className='left brand-logo'>
-            Emaily
+            SurveyCard
           </Link>
           <ul className='right'>
             {this.renderContent()}
